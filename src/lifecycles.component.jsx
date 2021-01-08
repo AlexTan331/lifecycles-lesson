@@ -3,28 +3,28 @@ import React from 'react';
 class Lifecycles extends React.Component {
   constructor() {
     super();
-    console.log('constructor!');
+    console.log('Lifecycles component constructor!');
   }
 
   componentDidMount() {
-    console.log('componentDidMount!');
+    console.log('Lifecycles componentDidMount!');
   }
 
   componentDidUpdate() {
-    console.log('componentDidUpdate!');
+    console.log('Lifecycles componentDidUpdate!');
   }
 
   componentWillUnmount() {
-    console.log('componentWillUnmount!');
+    console.log('Lifecycles componentWillUnmount!');
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log('shouldComponentUpdate!', nextProps);
+    console.log('Lifecycles shouldComponentUpdate!', nextProps);
     return nextProps.text !== this.props.text;
   }
 
   render() {
-    console.log('render!');
+    console.log('Lifecycles component render!');
     return (
       <div className='lifecycles'>
         <h3>LIFECYCLES COMPONENT</h3>
